@@ -1,0 +1,40 @@
+Package: targets.stan
+Title: An Example Targets Pipeline for Bayesian Data Analysis
+Description: This pipeline uses a targets pipeline to validate a
+  small Stan model.
+Version: 0.0.0.9000
+License: MIT + file LICENSE
+URL: https://wlandau.github.io/targets-stan,
+  https://github.com/wlandau/targets-stan
+BugReports: https://github.com/wlandau/targets-stan/issues
+Authors@R: c(
+  person(
+    given = c("William", "Michael"),
+    family = "Landau",
+    role = c("aut", "cre"),
+    email = "will.landau@gmail.com",
+    comment = c(ORCID = "0000-0003-1878-3253")
+  ),
+  person(
+    family = "Eli Lilly and Company",
+    role = "cph"
+  ))
+Depends:
+  R (>= 3.5.0)
+Imports:
+  dplyr (>= 1.0.5),
+  extraDistr (>= 1.9.0),
+  fst (>= 0.9.2),
+  rmarkdown (>= 2.3),
+  stantargets (>= 0.0.0.9000),
+  tarchetypes (>= 0.1.0),
+  targets (>= 0.2.0)
+Suggests:
+  clustermq (>= 0.8.9),
+  visNetwork (>= 2.0.9)
+Remotes:
+  wlandau/stantargets
+Encoding: UTF-8
+Language: en-US
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
