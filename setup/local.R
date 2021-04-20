@@ -1,12 +1,23 @@
 packages <- c(
+  "bs4Dash",
   "dplyr",
   "extraDistr",
   "fs",
   "fst",
+  "gt",
+  "markdown",
+  "pingr",
   "remotes",
   "rmarkdown",
+  "rprojroot",
+  "rstudioapi",
+  "shiny",
+  "shinybusy",
+  "shinyWidgets",
   "targets",
-  "tarchetypes"
+  "tarchetypes",
+  "tidyverse",
+  "visNetwork"
 )
 install.packages(packages)
 remotes::install_github("stan-dev/cmdstanr")
