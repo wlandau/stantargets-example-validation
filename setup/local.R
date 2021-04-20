@@ -10,5 +10,5 @@ packages <- c(
 )
 install.packages(packages)
 remotes::install_github("stan-dev/cmdstanr")
-remotes::install_github("wlandau/stantargets")
+remotes::install_github("ropensci/stantargets")
 cmdstanr::install_cmdstan()
