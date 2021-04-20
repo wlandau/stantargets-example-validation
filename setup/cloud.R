@@ -12,7 +12,7 @@ packages <- c(
 )
 install.packages(packages)
 remotes::install_github("stan-dev/cmdstanr")
-remotes::install_github("wlandau/stantargets")
+remotes::install_github("ropensci/stantargets")
 root <- rprojroot::find_rstudio_root_file()
 cmdstan <- file.path(root, "cmdstan")
 fs::dir_create(cmdstan)
