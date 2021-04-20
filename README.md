@@ -1,6 +1,9 @@
 
 # `stantargets` R package validation example
 
+[![Launch RStudio
+Cloud](https://img.shields.io/badge/RStudio-Cloud-blue)](https://rstudio.cloud/project/2466069)
+
 The goal of this workflow is to demonstrate the
 [`stantargets`](https://wlandau.github.io/stantargets/) R package using
 a practical example. In this scenario, we validate a small Bayesian
@@ -32,19 +35,29 @@ to pacakges [`targets`](https://docs.ropensci.org/targets/) and
 analysis, and it makes both the latter packages easier to use,
 especially multi-rep simulation studies like this one.
 [`stantargets`](https://wlandau.github.io/stantargets) makes decisions
-about how the pipelie is constructed,
+about how the pipeline is constructed,
 [`cmdstanr`](https://github.com/stan-dev/cmdstanr) runs and
 postprocesses the models, and
 [`targets`](https://docs.ropensci.org/targets/) orchestrates the
 computation while skipping expensive computations if the results are
 already up to date.
 
+## How to access
+
+You can try out this example project as long as you have a browser and
+an internet connection. [Click
+here](https://rstudio.cloud/project/2466069) to navigate your browser to
+an RStudio Cloud instance. Alternatively, you can clone or download this
+code repository and install the R packages [listed
+here](https://github.com/wlandau/stantargets-example-validation/blob/main/DESCRIPTION#L25-L41).
+
 ## How to run
 
 In the R console, call the
 [`tar_make()`](https://wlandau.github.io/targets/reference/tar_make.html)
-function to run the pipeline. Then, call `tar_read(hist)` to retrieve
-the histogram. Experiment with [other
+function to run the pipeline. Then, call `tar_read(cover_continuous)` to
+retrieve observed coverage, and open `report.html` in a web browser to
+view the full results of the validation studyz. Experiment with [other
 functions](https://wlandau.github.io/targets/reference/index.html) such
 as
 [`tar_visnetwork()`](https://wlandau.github.io/targets/reference/tar_visnetwork.html)
