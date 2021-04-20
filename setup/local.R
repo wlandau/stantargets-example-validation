@@ -13,6 +13,7 @@ packages <- c(
   "rstudioapi",
   "shiny",
   "shinybusy",
+  "shinycssloaders",
   "shinyWidgets",
   "targets",
   "tarchetypes",
