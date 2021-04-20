@@ -41,7 +41,7 @@ Imports:
   visNetwork (>= 2.0.9)
 Suggests:
   clustermq (>= 0.8.9),
-  visNetwork (>= 2.0.9)
+  future (>= 1.21.0)
 Remotes:
   wlandau/stantargets
 Encoding: UTF-8
