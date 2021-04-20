@@ -1,8 +1,8 @@
 packages <- c(
   "dplyr",
   "extraDistr",
-  "fs"
-  "fst"
+  "fs",
+  "fst",
   "remotes",
   "rmarkdown",
   "targets",
