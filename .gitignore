@@ -3,8 +3,10 @@
 .RData
 .Ruserdata
 .DS_Store
+.Renviron
 *~
 _targets
+cmdstan
 rsconnect
 stan/model
 stan/model_threads
