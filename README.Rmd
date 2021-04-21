@@ -30,6 +30,10 @@ sigma ~ HalfCauchy(0, 1)
 
 The [`stantargets`](https://wlandau.github.io/stantargets) R package manages the workflow. [`stantargets`](https://wlandau.github.io/stantargets) is an extension to pacakges [`targets`](https://docs.ropensci.org/targets/) and [`cmdstanr`](https://github.com/stan-dev/cmdstanr) for Bayesian data analysis, and it makes both the latter packages easier to use, especially multi-rep simulation studies like this one. [`stantargets`](https://wlandau.github.io/stantargets) makes decisions about how the pipeline is constructed, [`cmdstanr`](https://github.com/stan-dev/cmdstanr) runs and postprocesses the models, and [`targets`](https://docs.ropensci.org/targets/) orchestrates the computation while skipping expensive computations if the results are already up to date.
 
+## Why `stantargets` and not just `targets`?
+
+[`stantargets`](https://wlandau.github.io/stantargets) makes the validation study much simpler than with [`targets`](https://docs.ropensci.org/targets/) alone. To demonstrate, <https://github.com/wlandau/targets-stan> is a implementation of the same workflow without [`stantargets`](https://wlandau.github.io/stantargets), and the [`_targets.R` file](https://github.com/wlandau/targets-stan/blob/main/_targets.R) is much longer and more complicated. With [`stantargets`](https://wlandau.github.io/stantargets), the [pipeline in the `_targets.R` file](https://github.com/wlandau/stantargets-example-validation/blob/main/_targets.R) becomes much simpler and easier to define.
+
 ## How to access
 
 You can try out this example project as long as you have a browser and
